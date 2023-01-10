@@ -35,8 +35,7 @@ public class kisiEkle extends AppCompatActivity {
             startActivity(i);
         });
 
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
+        Bundle extras = getIntent().getExtras();
         int idKisi = extras.getInt("ID");
         String adKisi = extras.getString("AD");
         String numaraKisi = extras.getString("NUMARA");
