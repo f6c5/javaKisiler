@@ -23,6 +23,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //view lerimizi oluşturuyoruz
     Button btn_kisi_ekle;
     ListView lv_kisiler;
     ArrayAdapter adapter;
@@ -32,11 +33,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //view lerimizi id üzerinden eşleştiriyoruz
         btn_kisi_ekle = findViewById(R.id.btn_kisi_ekle);
         lv_kisiler = findViewById(R.id.lv_kisiler);
+
+        //dbhelper nesnesimi oluşturuyoruz
         DBHelper db = new DBHelper(this);
+        //listemize veri tabanından çektiğimiz verileri aktarıyoruz
         List<kisi> kisiler = db.kisileriGetir();
+
         ArrayList<Integer> kisilerId = new ArrayList<>();
         ArrayList<String> kisilerAd = new ArrayList<>();
         ArrayList<String> kisilerNumara = new ArrayList<>();

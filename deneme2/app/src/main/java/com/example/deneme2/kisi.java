@@ -1,11 +1,11 @@
 package com.example.deneme2;
-
+//nesnemiz
 public class kisi {
     public int id;
     public String ad;
     public String numara;
 
-    public kisi(){}
+    public kisi() { }
 
     public kisi(int id, String ad, String numara){
         this.id = id;
@@ -19,7 +19,9 @@ public class kisi {
         this.numara = numara;
     }
 
-    public int getId(){return id; }
+    public int getId() {
+        return id;
+    }
 
     public String getAd(){
         return ad;
@@ -37,6 +39,8 @@ public class kisi {
         this.numara = numara;
     }
 
-    public void setId(int id){this.id = id;}
+    public void setId(int id) {
+        this.id = id;
+    }
 
 }
