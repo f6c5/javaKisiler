@@ -39,8 +39,8 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public List<kisi> kisileriGetir(){
-        List<kisi> kisiler = new ArrayList<>();
+    public ArrayList<kisi> kisileriGetir(){
+        ArrayList<kisi> kisiler = new ArrayList<>();
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM tbl_kisiler",null);
@@ -72,4 +72,6 @@ public class DBHelper extends SQLiteOpenHelper {
         db.delete("tbl_kisiler","ID =?",new String[]{String.valueOf(id)});
         db.close();
     }
+
+
 }

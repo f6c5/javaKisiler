@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="ekle"/>
-    <item android:title="sil"/>
+    <item
+        android:id="@+id/mi_ekle"
+        android:title="ekle"/>
+
+    <item
+        android:id="@+id/mi_sil"
+        android:title="sil"/>
 </menu>

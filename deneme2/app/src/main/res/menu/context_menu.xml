@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cmi_ac"
+        android:title="aç"/>
 
+    <item
+        android:id="@+id/cmi_sil"
+        android:title="sil"/>
 </menu>
