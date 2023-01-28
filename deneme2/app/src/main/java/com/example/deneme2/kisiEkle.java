@@ -50,12 +50,14 @@ public class kisiEkle extends AppCompatActivity {
         });
 
         Bundle extras = getIntent().getExtras();
-        int idKisi = extras.getInt("ID");
-        String adKisi = extras.getString("AD");
-        String numaraKisi = extras.getString("NUMARA");
+        if (extras == null){
+            int idKisi = extras.getInt("ID");
+            String adKisi = extras.getString("AD");
+            String numaraKisi = extras.getString("NUMARA");
 
-        et_ad.setText(adKisi);
-        et_numara.setText(numaraKisi);
+            et_ad.setText(adKisi);
+            et_numara.setText(numaraKisi);
+        }
 
 
     }

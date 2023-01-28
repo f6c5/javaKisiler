@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.mi_ekle:
                 //id si mi_ekle seçildiğinde ne olucağı
+                Intent i = new Intent(this,kisiEkle.class);
+                startActivity(i);
                 break;
             case R.id.mi_sil:
                 //id si mi_sil seçildiğinde ne olucağı
